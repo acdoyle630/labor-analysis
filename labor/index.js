@@ -9,7 +9,7 @@ const db = require('./models');
 
 app.use(bodyParser.json({extended: true}));
 
-//app.use('/api', require('./api'));
+app.use('/api', require('./api'));
 
 app.listen(8000, () =>{
   console.log(`listening on port: ${PORT}`);
